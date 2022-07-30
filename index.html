@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    
+    <h1 id="title">User Registration Form</h1>
+    <p id="description">Please fill out all fields in the form to become apart of our community.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"> Enter your name: <input type="text" id="name" placeholder="Giovanni Toussaint" required> </label>
+
+        <label id="email-label"> Enter your email: <input type="email" id="email" placeholder="myemail@gmail.com" required> </label>
+
+  <label id="number-label"> Enter your age: <input type="number" id="number" placeholder="24" min="13" max="120" required> </label>
+
+  <label> What is your favorite sport? <select id="dropdown">
+    <option value="1">Football</option>
+    <option value="2">Cricket</option>
+    <option value="3">Basketball</option>
+
+  </select> 
+  </label>
+ </fieldset>
+ <fieldset>
+<p class="question"> Are you able to allocate 20 hours a week to this program?</p>
+  <label> <input type="radio" name="radio" value="option"> Option 1 
+  </label>
+    <label> <input type="radio" name="radio" value="option"> Option 2  
+  </label>
+
+  <p class="question"> What are your strong points from the options given?</p>
+
+  <label> <input type="checkbox" value="A"> Option A</label>
+   <label> <input type="checkbox" value="B"> Option B</label>
+    <label> <input type="checkbox" value="C"> Option C</label>
+     <label> <input type="checkbox" value="D"> Option D</label>
+
+    
+ <p>Any comments on this form say here</p>
+
+     <textarea> Comment here... </textarea>
+     
+     
+  </fieldset>
+
+  
+
+        
+
+     
+
+      <input type="submit" id="submit">
+
+      </form>
+</body>
+
+
+  </html>
+
+
+<style>
+body{
+  margin:0;
+  width:100%;
+  padding: 10px;
+  font-family: Arial;
+  background: url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  color: white;
+}
+
+h1, p{
+  text-align: center;
+}
+
+
+#survey-form{
+  height:auto;
+  width:500px;
+  margin: 0 auto;
+  background-color: rgba(120,24,125,0.3);
+  border-radius: 3px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+label{
+  display: block;
+  margin: 10px;
+}
+
+input[type="text"], input[type="number"], textarea {
+  margin: 5px auto;
+  width:75%;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  display: block;
+  
+}
+
+#name-label, #email-label, #number-label{
+  padding-bottom: 10px;
+}
+
+fieldset{
+  border:none;
+}
+
+#dropdown{
+  width:200px;
+  font-size: 15px;
+  display:block;
+  margin: 10px auto;
+
+}
+
+input[type="submit"]{
+  width: auto;
+  padding: 7px 15px;
+  border: 2px solid white;
+  color: black;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size:20px;
+  border-radius: 2rem;
+
+}
+
+.question{
+  text-align:left;
+  margin: 10px;
+}
+
+input[type="radio"]{
+  display: inline-block;
+}
+
+</style>
+
+
